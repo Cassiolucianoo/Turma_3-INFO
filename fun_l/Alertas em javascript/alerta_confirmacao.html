@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Alerta de Confirmação</title>
+</head>
+<body>
+
+    <button onclick="mostrarConfirmacao()">Clique para exibir a confirmação</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarConfirmacao() {
+            var resposta = confirm("Deseja continuar?");
+            if (resposta) {
+                document.getElementById("resultado").innerHTML = "Você pressionou OK!";
+            } else {
+                document.getElementById("resultado").innerHTML = "Você pressionou Cancelar!";
+            }
+        }
+    </script>
+    
+</body>
+</html>
